@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Student Management</h2>
+
+    <!-- Student Form -->
+    <form id="student-form">
+      <input type="hidden" id="student-id" />
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <button type="submit">Save Student</button>
+    </form>
+
+    <!-- Student List -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="student-list"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
